@@ -7,6 +7,7 @@
  */
 
 function rotate(input_list, rotate_steps) {
+    rotate_steps = rotate_steps > input_list.length ? rotate_steps % input_list.length : rotate_steps;
     let result = [];
     for(let i = rotate_steps; i < input_list.length; i++){
         result.push(input_list[i]);
@@ -19,7 +20,8 @@ function rotate(input_list, rotate_steps) {
 }
 
 console.log(rotate([1,2,3,4,5], 2));
-console.log(rotate([1,2,3,4,5], 3));
-console.log(rotate([1,2,3,4,5], 4));
-console.log(rotate([1,2,3,4,5], 5));
-console.log(rotate([1,2,3,4,5], 6));
+
+
+module.exports = {
+    rotate: rotate
+}
