@@ -1,3 +1,7 @@
 # ListRotater
 
-##### First clone the repo from :
+##### First clone the repo:
+
+```sh
+git clone https://github.com/benthehorn/ListRotater.git
+```
