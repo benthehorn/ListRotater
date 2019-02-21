@@ -24,3 +24,8 @@ It should return [3,4,5,6,1,2]
 ```sh
  npm test
 ```
+
+Because I am using two loops to iterate through the array I am using O(n) + O(n) swap operations, well I think!
+
+The first loop will only iterate from the rotate_steps index to the end, and the second from the beginning of the array
+to the rotate_steps index, so maybe it looks more like O(n - (array.length - rotate_steps)) + O(rotate_steps), but I know this isn't how it's written!
