@@ -21,6 +21,10 @@ function rotate(input_list, rotate_steps) {
 
 console.log(rotate([1,2,3,4,5], 2));
 
+console.log(process.env.NODE_ENV);
+if(process.env.NODE_ENV != 'test'){
+    console.log(rotate(JSON.parse(process.argv[2]), JSON.parse(process.argv[3])));
+}
 
 module.exports = {
     rotate: rotate

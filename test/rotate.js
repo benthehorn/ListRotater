@@ -51,5 +51,5 @@ describe('Rotate function', function() {
         const rotated = rotate.rotate(input, rot);
         expect(rotated).to.eql(result);
         done();
-    })
+    });
 })

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "cross-env NODE_ENV=test mocha"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "dependencies": {
     "chai": "^4.2.0",
     "mocha": "^6.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0"
   }
 }
